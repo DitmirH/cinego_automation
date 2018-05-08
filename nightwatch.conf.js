@@ -1,6 +1,6 @@
 const seleniumServer = require("selenium-server");
 const chromedriver = require("chromedriver");
-const SCREENSHOT_PATH = "./screenshots/";
+const SCREENSHOT_PATH = "../screenshots";
 
 // we use a nightwatch.conf.js file so we can include comments and helper functions
 module.exports = {
@@ -11,7 +11,7 @@ module.exports = {
     "selenium": {
         "start_process": true, // tells nightwatch to start/stop the selenium process
         "server_path": seleniumServer.path,
-        "host": "127.0.0.1",
+        "host": "",
         "port": 4444, // standard selenium port
         "cli_args": {
             "webdriver.chrome.driver" : chromedriver.path

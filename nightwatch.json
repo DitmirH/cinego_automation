@@ -20,13 +20,13 @@
 
   "test_settings" : {
     "default" : {
-      "launch_url" : "www.cinego.co.uk",
+      "launch_url" : "",
       "selenium_port"  : 4444,
-      "selenium_host"  : "localhost",
+      "selenium_host"  : "",
       "silent": true,
       "screenshots" : {
-        "enabled" : false,
-        "path" : ""
+        "enabled" : true,
+        "path" : "/screenshots/"
       },
       "desiredCapabilities": {
         "browserName": "chrome",
