@@ -8,6 +8,7 @@ function homepageModel(browser) {
 }
 
 module.exports = {
+    '@tags': ['homepage'], //test tag
     '1. navigate to try prime page': function (browser) {
         browser.url('http://www.amazon.co.uk');
         homepageModel(browser)
