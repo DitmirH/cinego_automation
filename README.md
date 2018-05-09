@@ -1,5 +1,6 @@
 # cinego_automation
-cinego web automation using nightwatch js
+web automation using nightwatch js
+includes Page object modelling/pattern
 
 
 Ensure you have the latest JDK (Java Development Kit) & JRE (Java Runtime Environment) installed :
