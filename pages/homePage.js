@@ -1,15 +1,11 @@
-//
-// module.exports = {
-//     elements: {
-//         primus: {
-//             selector: '#nav-link-prime'
-//         }
-//
-//     }
-// };
-
+//Page models for amazon Homepage
 module.exports = {
     elements: {
-        primus: '#nav-link-prime'
+        navTryPrimeLink: {
+            selector: '#nav-link-prime'
+        },
+        navWishList: {
+            selector: '#nav-link-wishlist'
+        }
     }
 };
