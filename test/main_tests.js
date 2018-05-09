@@ -29,5 +29,14 @@ module.exports = {
             .expect.element('.a-section.al-intro-banner').text.to.contain('Lists' && 'for all your shopping needs')
         browser.saveScreenshot('./screenshots/navigate_to_my_list.png')
             .end()
+    },
+    '3. navigate to your account': function (browser) {
+        browser.url('http://www.amazon.co.uk');
+        homepageModel(browser)
+            .waitForElementVisible('body', 1000)
+            .waitForElementVisible('.a-aui_51744-c', 1000)
+            .click('@navYourAccount')
+        browser.saveScreenshot('./screenshots/navigate_to_my_list.png')
+            .end()
     }
 };

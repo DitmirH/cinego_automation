@@ -6,6 +6,12 @@ module.exports = {
         },
         navWishList: {
             selector: '#nav-link-wishlist'
+        },
+        navYourAccount: {
+            selector: '#nav-link-yourAccount'
+        },
+        navBasket: {
+            selector: '#nav-cart'
         }
     }
 };
