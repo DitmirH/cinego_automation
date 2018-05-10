@@ -8,6 +8,7 @@ function homepageModel(browser) {
 }
 
 module.exports = {
+    '@tags': ['homepage', 'smoke'], //nightwatch --tag smoke
     '1. navigate to try prime page': function (browser) {
         browser.url('http://www.amazon.co.uk');
         homepageModel(browser)
@@ -36,7 +37,7 @@ module.exports = {
             .waitForElementVisible('body', 1000)
             .waitForElementVisible('.a-aui_51744-c', 1000)
             .click('@navYourAccount')
-        browser.saveScreenshot('./screenshots/navigate_to_my_list.png')
+        browser.saveScreenshot('./screenshots/navigate_to_my_account.png')
             .end()
     }
 };
