@@ -20,7 +20,8 @@ module.exports = {
             "screenshots": {
             },
             "globals": {
-                "waitForConditionTimeout": 5000 // sometimes internet is slow so wait.
+                "waitForConditionTimeout": 5000, // sometimes internet is slow so wait.
+                abortOnAssertionFailure: false
             },
             "desiredCapabilities": { // use Chrome as the default browser for tests
                 "browserName": "chrome"

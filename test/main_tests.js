@@ -36,7 +36,7 @@ module.exports = {
         homepageModel(browser)
             .waitForElementVisible('body', 1000)
             .waitForElementVisible('.a-aui_51744-c', 1000)
-            .click('@navYourAccount')
+            .click('@navYourAccount');
         browser.saveScreenshot('./screenshots/navigate_to_my_account.png')
             .end()
     }
