@@ -11,12 +11,9 @@ module.exports = {
     },
         sections: {
             // url: 'http://www.bbc.co.uk/radio/new',
-            listenLiveCarousel: {
-                selector: '.cap-c-listen-live',
-                elements: {
-                    allStationsLink: {
-                        selector: '.cap-o-link--secondary'
-                    }
+            listenLiveCarousel: {selector: '.cap-c-listen-live',
+
+                elements: { allStationsLink: { selector: '.cap-o-link--secondary'}
                 }
             }
         }

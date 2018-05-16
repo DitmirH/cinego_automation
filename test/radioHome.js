@@ -1,6 +1,4 @@
 require('../nightwatch.conf.js');
-require('../pages/homePage.js');
-require('mocha');
 
 const pageWorld = require ('../pageWorld.js');
 
@@ -12,12 +10,23 @@ module.exports = {
             .waitForElementVisible('body', 1000)
         pageWorld.listenLiveCarouselSection(browser).expect.element('@allStationsLink').to.be.visible;
         pageWorld.listenLiveCarouselSection(browser).click('@allStationsLink');
-        // browser.execute(function()) {
-        //     return console.log(document.readyState)
-        // },
         browser.saveScreenshot('./screenshots/navigate_to_all_stations.png')
             .end()
+    },
+    '2. sign in': function (browser) {
+        pageWorld.radioPage(browser).navigate();
+        pageWorld.signIn(browser)
 
-    }
+    },
+
 };
 
+
+
+// Scenario: 'Play all' button on Listen Later
+// Given I am on the My Radio overview page
+// And I sign in as 'Playspace Episode User'
+// When I select the play all button from the Listen Later section
+// Then I am on the Playspace page
+// And I see the first item from the Listen Later list starts playing
+// And I see the next 5 items in the coming up next section
