@@ -3,8 +3,12 @@ function radioPage(browser){
 }
 function listenLiveCarouselSection(browser){
     return radioPage(browser).section.listenLiveCarousel;
-}q
+}
+function signIn(browser){
+    return browser.page.signIn();
+}
 module.exports = {
     radioPage : radioPage,
-    listenLiveCarouselSection : listenLiveCarouselSection
+    listenLiveCarouselSection : listenLiveCarouselSection,
+    signIn : signIn
 };

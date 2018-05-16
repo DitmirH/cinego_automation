@@ -3,3 +3,7 @@ package-lock.json
 selenium-debug.json
 node_modules/
 yarn.lock
+.DS_Store
+.idea/
+screenshots/
+selenium-debug.log
