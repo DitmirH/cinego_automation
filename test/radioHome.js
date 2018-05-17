@@ -1,6 +1,6 @@
 require('../nightwatch.conf.js');
 
-const pageWorld = require ('../pageWorld.js');
+const pageWorld = require ('../support/pageWorld.js');
 
 module.exports = {
     '@tags': ['radio', 'smoke'], //nightwatch --tag smoke
