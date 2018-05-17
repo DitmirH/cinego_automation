@@ -1,5 +1,4 @@
 require('../nightwatch.conf.js');
-require('../pages/homePage.js');
 require('mocha');
 
 // this function calls the elements in homePage.js page
