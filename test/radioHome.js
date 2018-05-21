@@ -20,13 +20,3 @@ module.exports = {
     },
 
 };
-
-
-
-// Scenario: 'Play all' button on Listen Later
-// Given I am on the My Radio overview page
-// And I sign in as 'Playspace Episode User'
-// When I select the play all button from the Listen Later section
-// Then I am on the Playspace page
-// And I see the first item from the Listen Later list starts playing
-// And I see the next 5 items in the coming up next section
