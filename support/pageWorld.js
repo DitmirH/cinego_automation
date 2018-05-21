@@ -8,9 +8,17 @@ function listenLiveCarouselSection(browser){
 function signIn(browser){
     return browser.page.pageSignIn();
 }
+function listenLivePage(browser){
+    return browser.page.pageListenLive();
+}
+function listenLiveScheduleSection(browser){
+    return listenLivePage(browser).section.ListenLiveSchedule;
+}
 
 module.exports = {
     radioPage : radioPage,
     listenLiveCarouselSection : listenLiveCarouselSection,
-    signIn : signIn
+    signIn : signIn,
+    listenLivePage : listenLivePage,
+    listenLiveScheduleSection : listenLiveScheduleSection
 };
