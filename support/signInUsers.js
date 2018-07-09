@@ -18,7 +18,7 @@ function signInViaUpsell(user, browser){
         pageWorld.signIn(browser).setValue('@emailInput', 'abcd1234@post.com');
         pageWorld.signIn(browser).setValue('@passwordInput', 'Test123.');
     }
-    pageWorld.signIn(browser).click('@submitButton')
+    pageWorld.signIn(browser).click('@submitButton');
 }
 module.exports = {
     signInViaOrb: signInViaOrb,
