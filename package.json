@@ -10,8 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/DitmirH/cinego_automation.git"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -23,6 +22,7 @@
     "chromedriver": "^2.38.2",
     "selenium-server": "^3.11.0",
     "chai": "^4.1.2",
-    "mocha": "^5.0.4"
+    "mocha": "^5.0.4",
+    "nightwatch-xhr": "^0.4.3"
   }
 }

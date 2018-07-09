@@ -14,11 +14,19 @@ function listenLivePage(browser){
 function listenLiveScheduleSection(browser){
     return listenLivePage(browser).section.ListenLiveSchedule;
 }
+function soundsNav(browser){
+    return browser.page.pageSoundsNav();
+}
+
 
 module.exports = {
+    //Pages
     radioPage : radioPage,
-    listenLiveCarouselSection : listenLiveCarouselSection,
     signIn : signIn,
     listenLivePage : listenLivePage,
-    listenLiveScheduleSection : listenLiveScheduleSection
+    soundsNav : soundsNav,
+
+    //sections
+    listenLiveScheduleSection : listenLiveScheduleSection,
+    listenLiveCarouselSection : listenLiveCarouselSection
 };
