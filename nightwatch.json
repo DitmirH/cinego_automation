@@ -13,7 +13,7 @@
     "port" : 4444,
     "cli_args" : {
       "webdriver.chrome.driver" : "~/usr/local/bin/chromedriver",
-      "webdriver.gecko.driver" : "",
+      "webdriver.gecko.driver" : "~/usr/local/bin/geckodriver",
       "webdriver.edge.driver" : ""
     }
   },
