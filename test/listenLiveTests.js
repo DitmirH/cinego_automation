@@ -11,8 +11,7 @@ module.exports ={
         // browser.end()
         pageWorld.listenLivePage(browser)
             .navigate();
-        pageWorld.listenLiveScheduleSection(browser)
-            .expect.element('@onAirImage').to.be.visible;
+        pageWorld.listenLiveScheduleSection(browser).expect.element('@onAirImage').to.be.visible;
         browser.end()
     }
 };
